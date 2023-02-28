@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="RuR-tt-VJc">
+            <objects>
+                <viewController id="5ss-dd-03L" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8CB-Su-5kx">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="863"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SIX" translatesAutoresizingMaskIntoConstraints="NO" id="LaZ-Zb-4yZ">
+                                <rect key="frame" x="95" y="102" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Esb-aB-EaB">
+                                <rect key="frame" x="95" y="323" width="240" height="133"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Since I started to fight crime, I've fought many villans, but the worst, and most evil are the Sinister Six! They are six supervillans who formed an alliance to destroy the world and it is my duty to stop them!</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="y93-RV-4WH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pR4-ku-SC4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mvU-sk-lDN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-655" y="51"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyStoryProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khv-cK-pza">
+                                <rect key="frame" x="141" y="325" width="175" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="My Backstory"/>
+                                <connections>
+                                    <segue destination="A8Q-H2-vMq" kind="show" id="Y1u-oV-Vgt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhh-pJ-VHh">
+                                <rect key="frame" x="141" y="538" width="164" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="My Allies"/>
+                                <connections>
+                                    <segue destination="GZS-sQ-51B" kind="show" id="Ye5-kb-fTF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRr-cU-lfv">
+                                <rect key="frame" x="141" y="475" width="164" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="My Enemies"/>
+                                <connections>
+                                    <segue destination="5ss-dd-03L" kind="show" id="UB8-97-0Lf"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="spooderman3" translatesAutoresizingMaskIntoConstraints="NO" id="FFr-Sv-2cm">
+                                <rect key="frame" x="90" y="111" width="277" height="126"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spiderman" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDq-qI-ONe">
+                                <rect key="frame" x="163" y="266" width="83" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="khv-cK-pza" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="266" id="3id-V4-BrC"/>
+                            <constraint firstItem="FFr-Sv-2cm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="5VT-Ct-Qjg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="khv-cK-pza" secondAttribute="trailing" symbolic="YES" id="650-XE-VAe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bhh-pJ-VHh" secondAttribute="bottom" constant="325" id="Jfx-eT-esV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bDq-qI-ONe" secondAttribute="trailing" symbolic="YES" id="Qnz-KA-Y4q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gRr-cU-lfv" secondAttribute="trailing" symbolic="YES" id="T3L-5J-wXX"/>
+                            <constraint firstItem="FFr-Sv-2cm" firstAttribute="centerX" secondItem="khv-cK-pza" secondAttribute="centerX" id="VZN-pD-93s"/>
+                            <constraint firstItem="bhh-pJ-VHh" firstAttribute="top" secondItem="gRr-cU-lfv" secondAttribute="bottom" constant="28" id="Y5b-uf-8dN"/>
+                            <constraint firstItem="bhh-pJ-VHh" firstAttribute="height" secondItem="gRr-cU-lfv" secondAttribute="height" id="ZRw-pG-cbc"/>
+                            <constraint firstItem="bDq-qI-ONe" firstAttribute="top" secondItem="FFr-Sv-2cm" secondAttribute="bottom" constant="29" id="Zoe-6u-s4s"/>
+                            <constraint firstItem="bhh-pJ-VHh" firstAttribute="width" secondItem="gRr-cU-lfv" secondAttribute="width" id="cQ8-I1-M35"/>
+                            <constraint firstItem="khv-cK-pza" firstAttribute="top" secondItem="bDq-qI-ONe" secondAttribute="bottom" constant="38" id="edw-M0-2Hh"/>
+                            <constraint firstItem="bhh-pJ-VHh" firstAttribute="leading" secondItem="gRr-cU-lfv" secondAttribute="leading" id="epk-nM-D9R"/>
+                            <constraint firstItem="gRr-cU-lfv" firstAttribute="height" secondItem="khv-cK-pza" secondAttribute="height" id="f4y-4K-Qcf"/>
+                            <constraint firstItem="bDq-qI-ONe" firstAttribute="leading" secondItem="khv-cK-pza" secondAttribute="leading" constant="22" id="gRa-5t-Y1U"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FFr-Sv-2cm" secondAttribute="trailing" constant="63" id="jno-zd-eyW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bhh-pJ-VHh" secondAttribute="trailing" symbolic="YES" id="mD2-as-J6H"/>
+                            <constraint firstItem="bhh-pJ-VHh" firstAttribute="leading" secondItem="khv-cK-pza" secondAttribute="leading" id="nJy-Cd-g8Y"/>
+                            <constraint firstItem="bhh-pJ-VHh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="141" id="nas-Is-M79"/>
+                            <constraint firstItem="gRr-cU-lfv" firstAttribute="width" secondItem="khv-cK-pza" secondAttribute="width" constant="-11" id="uLO-U6-H34"/>
+                            <constraint firstItem="FFr-Sv-2cm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52" id="ua5-0C-4rJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="custombutton1" destination="khv-cK-pza" id="fEu-ST-KH6"/>
+                        <outlet property="custombutton2" destination="gRr-cU-lfv" id="YHU-6m-7ng"/>
+                        <outlet property="custombutton3" destination="bhh-pJ-VHh" id="NKo-YU-mOE"/>
+                        <outlet property="customlabel" destination="bDq-qI-ONe" id="ywH-yZ-NHE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hC8-DN-mlE">
+            <objects>
+                <viewController id="GZS-sQ-51B" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ipm-U7-tkW">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="863"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Avengers" translatesAutoresizingMaskIntoConstraints="NO" id="lrG-KB-0h4">
+                                <rect key="frame" x="95" y="141" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QCh-iZ-Kvd">
+                                <rect key="frame" x="95" y="330" width="240" height="169"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">In my career as a superhero so far, I've met many awesome superheroes, The coolest by far are the avengers. They are a group of superheroes who has saved the Earth multiple times!</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="llg-XA-1za"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Yma-cI-ngb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dq7-hU-Oyy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100.46511627906976" y="776.39484978540781"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fHK-m2-1dG">
+            <objects>
+                <viewController id="A8Q-H2-vMq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0gk-nH-rnD">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="863"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="spooderman4" translatesAutoresizingMaskIntoConstraints="NO" id="MIN-cE-wBL">
+                                <rect key="frame" x="95" y="155" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="v4z-Mr-DLI">
+                                <rect key="frame" x="95" y="377" width="240" height="158.33333333333337"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">My name is Peter Parker aka Spiderman. I turned into a superhero after I was bitten by a radioactive spider. My superpowers include stickiness, super strength and a "spidey" sense.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Iqb-o6-OeO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7In-pG-dCd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YPX-pl-vFo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="821" y="17"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Avengers" width="600" height="300"/>
+        <image name="SIX" width="225" height="225"/>
+        <image name="spooderman3" width="180" height="280"/>
+        <image name="spooderman4" width="300" height="168"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
